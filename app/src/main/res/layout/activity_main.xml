@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lichao.coordinatorlayout.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclverView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:paddingTop="?attr/actionBarSize">
+
+    </android.support.v7.widget.RecyclerView>
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:elevation="10dp"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        app:layout_behavior="com.lichao.coordinatorlayout.FloatingButtonBehavior"
+        android:src="@mipmap/ic_add_white_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>
