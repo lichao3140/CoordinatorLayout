@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
             list.add("item"+i);
         }
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //recyclerView.setAdapter(new MyRecyclerAdapter(list));
+        recyclerView.setAdapter(new MyRecyclerAdapter(list));
     }
 }
